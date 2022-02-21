@@ -23,9 +23,10 @@ class Home extends StatelessWidget {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-                textStyle: const TextStyle(fontSize: 26),
-                padding: const EdgeInsets.all(18),
-                primary: Colors.amber),
+              textStyle: const TextStyle(fontSize: 26),
+              padding: const EdgeInsets.all(18),
+              primary: Colors.amber,
+            ),
             onPressed: () {},
             child: const Text('click me'),
           ),
@@ -34,9 +35,10 @@ class Home extends StatelessWidget {
           ),
           TextButton(
             style: TextButton.styleFrom(
-                textStyle: const TextStyle(fontSize: 26),
-                padding: const EdgeInsets.all(12),
-                primary: Colors.purple),
+              textStyle: const TextStyle(fontSize: 26),
+              padding: const EdgeInsets.all(12),
+              primary: Colors.purple,
+            ),
             onPressed: () {},
             child: const Text('Or This One'),
           ),
