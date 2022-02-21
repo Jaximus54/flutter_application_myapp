@@ -15,12 +15,36 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[500],
       ),
-      body: Center(
-        child: Image.asset('assets/space3.jpg'),
+      body: Row(
+        children: <Widget>[
+          const Text('Sup Dude'),
+          const Spacer(
+            flex: 2,
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                textStyle: const TextStyle(fontSize: 26),
+                padding: const EdgeInsets.all(18),
+                primary: Colors.amber),
+            onPressed: () {},
+            child: const Text('click me'),
+          ),
+          const Spacer(
+            flex: 2,
+          ),
+          TextButton(
+            style: TextButton.styleFrom(
+                textStyle: const TextStyle(fontSize: 26),
+                padding: const EdgeInsets.all(12),
+                primary: Colors.purple),
+            onPressed: () {},
+            child: const Text('Or This One'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: const Text('click'),
+        child: const Text('click it'),
         backgroundColor: Colors.red[500],
       ),
     );
